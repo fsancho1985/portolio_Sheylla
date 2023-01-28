@@ -1,0 +1,15 @@
+.navbar-container {
+  max-width: 1496px;
+  height: 40px;
+  background-color: #1b3457;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.navbar-container a {
+  cursor: pointer;
+  color: #c8c8c8;
+}
+

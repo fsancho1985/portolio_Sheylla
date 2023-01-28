@@ -1,0 +1,39 @@
+{
+  "about": [
+    {
+      "title": "QUEM SOMOS",
+      "subtitle": "CONHEÇA A NOSSA EMPRESA",
+      "image": {
+        "url": "",
+        "alt": ""
+      },
+      "content": "Nossa empresa é movida por criatividade, transparência e busca constantes soluções. A nossa equipe é formada por Peritos Judiciais com mais de 20 anos de experiência na esfera imobiliária. Atuando em território nacional, praticamente 90% dos Magistrados reconhecem que os profissionais do negócio imobiliário é de fato o Corretor de Imóveis.Inovando, oferecemos o que faltava aos municípios para a avaliação dos imóveis tornando possível ainda que de forma escalonada a critério de cada gestão a atualização dos valores para fins de tributo (IPTU). Esta ferramenta atende às necessidades de agentes financeiros, Poder Judiciário ( principalmente Oficiais de Justiça ) e particulares em uma negociação ou intenção de venda/compra.   IMPORTANTE: Diante do que diz o Código de Defesa do Consumidor de que todo serviço prestado à sociedade se não estiver dentro das Normas da ABNT não tem valor comercial/jurídico algum."
+    }
+  ],
+  "cards_content": [
+    {
+      "image": {
+        "url": "https://cdn.pixabay.com/photo/2019/09/30/16/00/house-4516175_960_720.jpg",
+        "alt": "Imagem de uma casa em miniatura com um par de chaves ao lado."
+      },
+      "title": "Quem Somos",
+      "link": "Saiba Mais"
+    },
+    {
+      "image": {
+        "url": "https://cdn.pixabay.com/photo/2018/09/25/09/17/sale-3701777_960_720.jpg",
+        "alt": "Imagem de uma casa em miniatura com um par de chaves ao lado."
+      },
+      "title": "Serviços",
+      "link": "Saiba Mais"
+    },
+    {
+      "image": {
+        "url": "https://cdn.pixabay.com/photo/2023/01/17/15/01/money-7724806_960_720.jpg",
+        "alt": "Imagem de uma casa em formato de dado sobre uma pilha de notas de dinheiro."
+      },
+      "title": "Avaliação",
+      "link": "Saiba Mais"
+    }
+  ]
+}

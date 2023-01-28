@@ -1,0 +1,35 @@
+.wrapper-container {
+  max-width: 1496px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-img a {
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.container-img a:visited {
+  color: inherit;
+}
+
+.container-img img {
+  width: 250px;
+  height: 180px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.container-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
