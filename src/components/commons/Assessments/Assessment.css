@@ -26,6 +26,7 @@ section {
 }
 
 .left-title svg, .right-title svg {
+  color: #000;
   padding: 10px;
 }
 
@@ -92,7 +93,7 @@ section {
   color: #f8f8f8;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-weight: bold;
 }
 
