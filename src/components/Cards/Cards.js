@@ -18,7 +18,7 @@ const Cards = () => {
       />
       <div className="container-link">
         <div className='container-text'>
-          <AiOutlineUser size="1.5em" />
+          <AiOutlineUser size="1.5em" color='#494c52'/>
           <span>Quem Somos</span>
         </div>
         <NavLink to="/about">Saiba mais</NavLink>
@@ -31,7 +31,7 @@ const Cards = () => {
       />
       <div className="container-link">
         <div className='container-text'>
-          <AiOutlineSetting size="1.5em" />
+          <AiOutlineSetting size="1.5em" color='#494c52'/>
           <span>Serviços</span>
         </div>
         <NavLink to="/services">Saiba mais</NavLink>
@@ -44,7 +44,7 @@ const Cards = () => {
       />
       <div className="container-link">
         <div className='container-text'>
-          <AiOutlineAreaChart size="1.5em" />
+          <AiOutlineAreaChart size="1.5em" color='#494c52'/>
           <span>Avaliação Imobiliária</span>
         </div>
         <NavLink to="/assessment">Saiba mais</NavLink>
