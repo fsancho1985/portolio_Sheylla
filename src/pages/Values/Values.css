@@ -1,9 +1,9 @@
-.container-main-img {
+.container-main-img-values {
   display: flex;
   justify-content: center;
 }
 
-.container-main-img img {
+.container-main-img-values img {
   width: 540px;
   height: 330px;
   border-radius: 5px;
@@ -16,4 +16,15 @@
 
 .values-container p {
   font-size: 0.8rem;
+}
+
+@media(max-width: 550px) {
+  .container-main-img-values img {
+    width: 350px;
+    height: 280px;
+  }
+  .values-container, .values-2-container {
+    margin: 25px 40px;
+    line-height: 1rem;
+  }
 }

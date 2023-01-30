@@ -16,7 +16,7 @@ const Team = () => {
     <div>
       <Navbar />
       <Title title={'Perícia Judicial'}/>
-      <div className="container-main-img">
+      <div className="container-main-img-expertise">
         <img
           src={Servicos}
           alt="Imagem de um homem segurando uma placa escrita sucesso com ramificação para visão missão e valores"

@@ -8,8 +8,35 @@
   font-size: 1.2rem;
 }
 
+.navbar-container-mobile {
+  height: 40px;
+  background-color: #1b3457;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 1.2rem;
+  display: none;
+}
+
 .navbar-container a {
   cursor: pointer;
   color: #c8c8c8;
 }
 
+@media(max-width: 550px) {
+  .navbar-container {
+    display: none;
+  }
+  .navbar-container-mobile {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-container-mobile a {
+    cursor: pointer;
+    color: #c8c8c8;
+    padding: 8px;
+  }
+}

@@ -2,3 +2,10 @@
   margin: 55px 80px;
   line-height: 2rem;
 }
+
+@media(max-width: 550px) {
+  .content-services {
+    margin: 25px 40px;
+    line-height: 1rem;
+  }
+}
