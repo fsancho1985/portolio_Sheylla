@@ -8,7 +8,6 @@ const Logo = () => {
   return (
     <div className="logo">
       <img src={image} alt="Rodacki Perícias" />
-
       <h2>As melhores Condições do Mercado!</h2>
     </div>
   )

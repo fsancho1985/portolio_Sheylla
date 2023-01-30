@@ -1,0 +1,26 @@
+.container-main-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main-img q {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 0;
+  width: 500px;
+  font-size: .7rem;
+}
+
+.container-main-img img {
+  width: 540px;
+  height: 330px;
+  border-radius: 5px;
+}
+
+.content-services {
+  margin: 55px 80px;
+  line-height: 2rem;
+}

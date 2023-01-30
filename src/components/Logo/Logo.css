@@ -5,3 +5,7 @@
   align-items: center;
   height: 51.8%;
 }
+
+.logo img {
+  z-index: -1;
+}

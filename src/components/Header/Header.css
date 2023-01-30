@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   background-color: #1b3457;
   display: flex;
   flex-direction: column;
@@ -6,4 +7,10 @@
   color: #fff;
   padding: auto 0;
   margin: auto 0;
+}
+
+@media(max-width: 900px) {
+  .header {
+    width: 100%;
+  }
 }

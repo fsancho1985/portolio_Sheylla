@@ -118,7 +118,9 @@ const Assessments = () => {
           <h4>Avaliação Técnica</h4>
         </div>
         <div className="right-content">
-          <img src={Avaliacao} alt="" />
+          <div className="assessment-img">
+            <img src={Avaliacao} alt="" />
+          </div>
           <h5>Elaboração de Laudo</h5>
           <span>Profissionais</span>
           <p>
