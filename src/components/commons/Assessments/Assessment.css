@@ -142,3 +142,20 @@ section {
     justify-content: center;
   }
 }
+
+@media(max-width: 550px) {
+  .mini-cards {
+    display: flex;
+    align-items: center;
+  }
+  .card-1 {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .content-card p {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -8,3 +8,10 @@
   height: 330px;
   border-radius: 5px;
 }
+
+@media(max-width: 550px) {
+  .container-main-img img {
+    width: 350px;
+    height: 280px;
+  }
+}

@@ -2,6 +2,7 @@
   max-width: 1496px;
   display: flex;
   justify-content: space-evenly;
+  margin: 35px;
 }
 
 .container-img a {
@@ -32,4 +33,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media(max-width: 850px) {
+  .wrapper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -3,9 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 51.8%;
+  height: 53.8%;
 }
 
 .logo img {
+  margin: 10px;
   z-index: -1;
+}
+
+@media(max-width: 550px) {
+  .logo img {
+    width: 150px;
+    height: 150px;
+  }
 }

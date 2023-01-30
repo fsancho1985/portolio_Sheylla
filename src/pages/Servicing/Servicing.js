@@ -14,7 +14,7 @@ const Servicing = () => {
     <div>
       <Navbar />
       <Title title={'Nossos Serviços'} subtitle={'Avaliação do seu Imóvel'}/>
-      <div className="container-main-img">
+      <div className="container-main-img-services">
         <img
           src={Servicos}
           alt="Imagem de um contrato assinado com um chaveiro em forma de casa."

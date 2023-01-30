@@ -23,7 +23,7 @@ const Values = () => {
           A COMUNIDADE. INOVAR SEMPRE COM AS MUDANÇAS DO MOMENTO!
         </p>
       </div>
-      <div className="container-main-img">
+      <div className="container-main-img-values">
         <img
           src={Value}
           alt="Imagem de um homem segurando uma placa escrita sucesso com ramificação para visão missão e valores"
