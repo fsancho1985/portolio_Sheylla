@@ -1,0 +1,101 @@
+.container {
+  height: 100vh;
+}
+
+.wrapper-contact {
+  margin: 55px 80px;
+  line-height: 2rem;
+}
+
+.container-main-img-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.container-main-img-contact img {
+  width: 540px;
+  height: 330px;
+  border-radius: 5px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.form-contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.form-contact input {
+  height: 40px;
+  outline: none;
+}
+
+.form-contact input,
+textarea {
+  margin-bottom: 5px;
+  width: 500px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: none;
+}
+
+button {
+  width: 200px;
+  border-radius: 8px;
+  background: #494c52;
+  margin: 2px;
+  padding: 8px;
+  text-decoration: none;
+  color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  border: none;
+}
+
+.whats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.whats-contact a svg {
+  border-radius: 100%;
+  background: #20b038;
+  min-width: 40px;
+  max-width: 150px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .container-main-img-contact img {
+    width: 350px;
+    height: 280px;
+  }
+  .form-contact input,
+  textarea {
+    margin-bottom: 5px;
+    width: 280px;
+  }
+}

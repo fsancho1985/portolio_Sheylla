@@ -14,6 +14,7 @@ const Navbar = () => {
         <NavLink to="/assessment">Avaliação</NavLink>
         <NavLink to="/expertise">Perícia</NavLink>
         <NavLink to="/values">Valores</NavLink>
+        <NavLink to="/contact">Contato</NavLink>
       </nav>
       <nav className="navbar-container-mobile">
         <NavLink to="/">Home</NavLink>
@@ -21,7 +22,7 @@ const Navbar = () => {
         <NavLink to="/services">Serviços</NavLink>
         <NavLink to="/assessment">Avaliação</NavLink>
         <NavLink to="/expertise">Perícia</NavLink>
-        <NavLink to="/values">Valores</NavLink>
+        <NavLink to="/contact">Contato</NavLink>
       </nav>
     </>
   )
