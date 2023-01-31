@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="form-contact">
           <h3>Pelo formulário</h3>
           <form
-            action="https://formsubmit.co/frsancho1985@gmail.com"
+            action="https://formsubmit.co/contato.periciasimoveis@gmail.com"
             method="POST"
           >
             <input type="text" name="name" placeholder="Nome" />
@@ -41,7 +41,7 @@ const Contact = () => {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:3000/"
+              value="https://rodacki-pericias.vercel.app/"
             ></input>
           </form>
         </div>
