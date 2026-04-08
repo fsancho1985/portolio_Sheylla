@@ -17,6 +17,9 @@ import Thanks from './pages/Thanks/Thanks'
 function App() {
   return (
     <div>
+      <div id="dpoeasy-banner">
+        <script src="https://cdn.cookies.dponet.com.br/banners/b3a117a5a1a7f8d1632aca79b9ce19d6/banner.js"></script>
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -29,6 +32,7 @@ function App() {
           <Route path="/thanks" element={<Thanks />} />
         </Routes>
       </BrowserRouter>
+
     </div>
   )
 }
