@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HelmetProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.VITE_ROUTER_BASE || '/'}>
           <AnalyticsProvider>
             <AppRoutes />
           </AnalyticsProvider>

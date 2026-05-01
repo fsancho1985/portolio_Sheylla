@@ -1,0 +1,64 @@
+name: Deploy Test Environments to GitHub Pages
+
+on:
+  push:
+    branches:
+      - test-1
+      - test-2
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Get branch name
+        id: branch
+        run: echo "name=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (test-1 — Vite)
+        if: steps.branch.outputs.name == 'test-1'
+        run: npm run build
+        env:
+          VITE_BASE_URL: /portolio_Sheylla/test-1/
+          VITE_ROUTER_BASE: /portolio_Sheylla/test-1
+
+      - name: Build (test-2 — CRA)
+        if: steps.branch.outputs.name == 'test-2'
+        run: npm run build
+        env:
+          PUBLIC_URL: /portolio_Sheylla/test-2
+
+      - name: Set output folder
+        id: dist
+        run: |
+          if [ "${{ steps.branch.outputs.name }}" = "test-1" ]; then
+            echo "folder=dist" >> $GITHUB_OUTPUT
+          else
+            echo "folder=build" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Add 404.html for SPA routing
+        run: cp ${{ steps.dist.outputs.folder }}/index.html ${{ steps.dist.outputs.folder }}/404.html
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ${{ steps.dist.outputs.folder }}
+          branch: gh-pages
+          target-folder: ${{ steps.branch.outputs.name }}
+          clean: false
