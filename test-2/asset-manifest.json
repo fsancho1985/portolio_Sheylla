@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portolio_Sheylla/test-2/static/css/main.f5eebb80.css",
+    "main.js": "/portolio_Sheylla/test-2/static/js/main.de5a3a40.js",
+    "static/media/contact-us.jpg": "/portolio_Sheylla/test-2/static/media/contact-us.d02f803e6cad1f0c32ec.jpg",
+    "static/media/handshake.jpg": "/portolio_Sheylla/test-2/static/media/handshake.9f2bdd1ce94ee6e78a6e.jpg",
+    "static/media/house_1.jpg": "/portolio_Sheylla/test-2/static/media/house_1.32189b25e4930af9ce36.jpg",
+    "static/media/avaliacao.jpg": "/portolio_Sheylla/test-2/static/media/avaliacao.cf4d27c5573eb2ece0bf.jpg",
+    "static/media/house.jpg": "/portolio_Sheylla/test-2/static/media/house.65573a06c6455310348f.jpg",
+    "static/media/servicos.jpg": "/portolio_Sheylla/test-2/static/media/servicos.7b1d5f04d6aa1ce86ef2.jpg",
+    "static/media/rural.jpg": "/portolio_Sheylla/test-2/static/media/rural.d1f64b29f7a5896d16d4.jpg",
+    "static/media/comercial.jpg": "/portolio_Sheylla/test-2/static/media/comercial.70cdde655ad4635241d0.jpg",
+    "static/media/lotes.jpg": "/portolio_Sheylla/test-2/static/media/lotes.8a35b6cc0e540548f6af.jpg",
+    "static/media/house-card.jpg": "/portolio_Sheylla/test-2/static/media/house-card.7886ff51877430edba8e.jpg",
+    "static/media/valores.jpg": "/portolio_Sheylla/test-2/static/media/valores.f190fb7eb3d6d2aad905.jpg",
+    "static/media/galpao.jpg": "/portolio_Sheylla/test-2/static/media/galpao.899aff639891edcd8995.jpg",
+    "static/media/office.jpg": "/portolio_Sheylla/test-2/static/media/office.54bb04bd9568a83e44e5.jpg",
+    "static/media/Logo.jpeg": "/portolio_Sheylla/test-2/static/media/Logo.2096872b9099f12a7114.jpeg",
+    "index.html": "/portolio_Sheylla/test-2/index.html",
+    "main.f5eebb80.css.map": "/portolio_Sheylla/test-2/static/css/main.f5eebb80.css.map",
+    "main.de5a3a40.js.map": "/portolio_Sheylla/test-2/static/js/main.de5a3a40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5eebb80.css",
+    "static/js/main.de5a3a40.js"
+  ]
+}
