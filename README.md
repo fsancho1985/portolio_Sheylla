@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Rodacki Perícias — Model A
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site institucional da Rodacki Perícias. Este branch (`model-a`) é uma refatoração completa com Vite, Material UI v5, SEO e analytics.
 
-## Available Scripts
+## Tecnologias
 
-In the project directory, you can run:
+- React 18 + Vite
+- Material UI v5
+- react-helmet-async (SEO)
+- @vercel/analytics + GA4
+- react-router-dom v6
 
-### `npm start`
+## Como rodar localmente
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+npm run dev
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Acesse: http://localhost:5173
 
-### `npm test`
+## Configurar GA4
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Crie o arquivo `.env.local` na raiz do projeto.
+2. Adicione:
+   ```
+   VITE_GA4_ID=G-SEU-ID-AQUI
+   ```
+3. Reinicie o servidor de desenvolvimento.
 
-### `npm run build`
+> O arquivo `.env.example` contém o template. `.env.local` está no `.gitignore` e nunca deve ser commitado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como publicar na Vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Importe o repositório na Vercel.
+2. Defina a variável de ambiente `VITE_GA4_ID` com seu ID do GA4.
+3. Faça o deploy — a Vercel detecta Vite automaticamente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Estrutura de pastas
 
-### `npm run eject`
+```
+src/
+  assets/           imagens
+  components/
+    analytics/      AnalyticsProvider
+    layout/         Header, Navbar, Footer
+    ui/             AppButton, SectionTitle, ServiceCard, PageContainer, ContactCard
+  data/             companyInfo, navigation, services, seo
+  pages/            Home, About, Services, Assessment, Expertise, Values, Contact, Thanks
+  routes/           AppRoutes.jsx
+  services/         analytics.js
+  styles/           global.css
+  theme/            theme.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Experimento A/B
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Todos os eventos GA4 incluem os parâmetros:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```json
+{
+  "experiment_id": "rodacki_site_ab_2026",
+  "variant": "A"
+}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Isso permite comparar variantes de design no GA4 usando segmentos por `experiment_id` e `variant`.
